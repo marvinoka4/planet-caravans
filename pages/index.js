@@ -9,6 +9,7 @@ import {
 export default function Home() {
   return (
     <div>
+
       <PlanetNavBar />
       <PlanetHero />
       <PlanetContentText />

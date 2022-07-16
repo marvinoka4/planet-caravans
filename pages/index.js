@@ -5,16 +5,28 @@ import {
   PlanetCTABlock,
   PlanetFooter
 } from '/ui-components'
+import Head from "next/head";
 
 export default function Home() {
   return (
-    <div>
+      <div>
+          <Head>
+              <title>Planet Caravans</title>
+              <meta name='description' content='Built by evensix' />
+              <link rel='icon' href='/favicon.ico' />
+          </Head>
 
-      <PlanetNavBar />
-      <PlanetHero />
-      <PlanetContentText />
-      <PlanetCTABlock />
-      <PlanetFooter />
-    </div>
+
+          <div>
+
+              <PlanetNavBar />
+              <PlanetHero />
+              <PlanetContentText />
+              <PlanetCTABlock />
+              <PlanetFooter />
+          </div>
+
+      </div>
+
   )
 }
